@@ -361,3 +361,13 @@ func SecondaddTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
 	Node := ListNodeMultiPlusSecondVersion(*l1, *l2)
 	return &Node
 }
+
+//func init() {
+//	list1 := []int{1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1}
+//	l11 := gobase.AddListNode(list1)
+//
+//	list2 := []int{0}
+//	l22 := gobase.AddListNode(list2)
+//	Node := gobase.ListNodeMultiPlusSecondVersion(l11, l22)
+//	fmt.Println(gobase.ListNodeToSrting(&Node))
+//}
