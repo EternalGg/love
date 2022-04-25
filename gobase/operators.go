@@ -43,14 +43,14 @@ func Array() {
 
 func Slice() {
 	arr := [...]int{9, 8, 7, 6, 5, 4, 3, 2, 1, 0}
-	slice5 := arr[2:8]
-	slice6 := arr[0:6]         //可以简写为 slice := arr[:end]
-	slice7 := arr[5:10]        //可以简写为 slice := arr[start:]
-	slice8 := arr[0:len(arr)]  //slice := arr[:]
-	slice9 := arr[:len(arr)-6] //去掉切片的最后一个元素
+	//slice5 := arr[len(1)]
+	slice6 := arr[:]                     //可以简写为 slice := arr[:end]
+	slice7 := arr[5:10]                  //可以简写为 slice := arr[start:]
+	slice8 := arr[0:len(arr)]            //slice := arr[:]
+	slice9 := arr[len(arr)-1 : len(arr)] //去掉切片的最后一个元素
 	slice10 := make([]int, 3, 6)
 	fmt.Printf("局部变量： arr2 %v\n", arr)
-	fmt.Printf("局部变量： slice5 %v\n", slice5)
+	//fmt.Printf("局部变量： slice5 %v\n", slice5)
 	fmt.Printf("局部变量： slice6 %v\n", slice6)
 	fmt.Printf("局部变量： slice7 %v\n", slice7)
 	fmt.Printf("局部变量： slice8 %v\n", slice8)
@@ -85,14 +85,14 @@ func Range() { //range 两个参数分别代表下表和内容
 
 }
 
-//func init() {
-//	fmt.Println("we are base")
-//	Arithmetic_operators()
-//	Var()
-//	Const()
-//	Array()
-//	Range()
-//	Slice()
-//	Pointer()
-//	fmt.Println("base end")
-//}
+func init() {
+	fmt.Println("we are base")
+	Arithmetic_operators()
+	Var()
+	Const()
+	Array()
+	Range()
+	Slice()
+	Pointer()
+	fmt.Println("base end")
+}
