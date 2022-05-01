@@ -51,6 +51,6 @@ func SecondDefer() {
 	fmt.Printf("%d bytes: %s\n", n1, string(b1))
 }
 
-func init() {
-	SecondDefer()
-}
+//func init() {
+//	SecondDefer()
+//}

@@ -106,9 +106,17 @@ func FindMedianSortedArrays(nums1 []int, nums2 []int) float64 {
  * Return
  */
 func FindMedianSortedArraysSecondVersion(nums1 []int, nums2 []int) float64 {
-	var mid float64
+	lens := len(nums1) + len(nums2)
+	midlocal := lens / 2
+	var p1, p2 int
 
-	return mid
+	for i := 0; i < midlocal; i++ {
+		if nums1[p1] > nums2[p2] {
+
+		}
+
+	}
+	return 3
 }
 
 //TODO
@@ -128,5 +136,5 @@ func FindMedianSortedArraysThreadVersion() {
 //	num5 := []int{1}
 //	//fmt.Println(letcode.FindMedianSortedArrays(num1, num2))
 //	//fmt.Println(letcode.FindMedianSortedArrays(num2, num3))
-//	fmt.Println(FindMedianSortedArrays(num4, num5))
+//	fmt.Println(FindMedianSortedArraysSecondVersion(num4, num5))
 //}

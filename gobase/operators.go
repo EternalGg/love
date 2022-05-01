@@ -85,14 +85,14 @@ func Range() { //range 两个参数分别代表下表和内容
 
 }
 
-func init() {
-	fmt.Println("we are base")
-	Arithmetic_operators()
-	Var()
-	Const()
-	Array()
-	Range()
-	Slice()
-	Pointer()
-	fmt.Println("base end")
-}
+//func init() {
+//	fmt.Println("we are base")
+//	Arithmetic_operators()
+//	Var()
+//	Const()
+//	Array()
+//	Range()
+//	Slice()
+//	Pointer()
+//	fmt.Println("base end")
+//}
